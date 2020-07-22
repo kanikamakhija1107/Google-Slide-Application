@@ -15,8 +15,8 @@ Webpack configuration:
 <li> Run the webpack, create dist folder, create main.js file npx webpack --config webpack.config.js </li>
 <li> npm run build </li>
 
-Installing Webpack Server:
 
+Installing Webpack Server:
 <li> npm install --save-dev webpack-dev-server </li>
 <li> npm start </li>
 
