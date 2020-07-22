@@ -1,0 +1,182 @@
+body{
+    font-family: ‘Segoe UI’;
+    font-size: 12pt;
+    background-color:  lightgray;
+    }
+
+
+.sidenav {
+    height: 100%;
+    width: 240px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    border-right: 1px solid darkgrey;
+    overflow-x: hidden;
+    padding-top: 20px;
+    }
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+    
+article{
+    width: 80%;
+    margin:auto;
+    margin-top:10px;
+    }
+    
+
+img{
+    height: 100%;
+    object-fit: fill;
+    max-height: 100%;
+    max-width: 100%;
+    display: block;
+    margin: auto auto;
+}
+
+
+
+.wrapper{
+    /* width: 800px;
+    height: 500px; */
+    width: 60%;
+    height: 60%;
+    /* padding: 10px; */
+    overflow: hidden;
+    margin: 10px;
+    margin-left: 240px; /* Same as the width of the sidenav */
+    padding: 90px 0px;
+    }
+    
+.buttons{
+    padding: 10px;
+    /* margin: 10px; */
+    /* border: 1px solid black; */
+    background-color:darkgrey;
+    }
+button{
+    color: white;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 20px;
+    }
+      
+button:hover{
+    background-color:steelblue;
+    transition: all 0.3s linear 0s;
+    }
+
+.editable {
+    touch-action: none;
+    user-select: none;
+    position: relative;
+    /* overflow: auto; */
+    position: relative;
+    overflow: hidden;
+    float: right;
+    width: 100%;
+    height: 100%;
+}
+
+.editablethumbnail img{
+    width: 100%;
+    /* height: 100%; */
+}
+
+.editable:active {
+    opacity: .75;
+  }
+.editable:hover {
+    cursor: pointer;
+  }
+
+
+#container {
+    /* width: 60%; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    /* border-radius: 7px; */
+    touch-action: none;
+    /* height: 450px; */
+    background-color: white;
+}
+
+.resizable {
+  background: white;
+  width: 250px;
+  height: 200px;
+  position: absolute;
+  top: 200px;
+  /* left: 100px; */
+  min-width: 100px;
+    min-height: 100px;
+}
+
+.resizable .resizers{
+  width: 100%;
+  height: 100%;
+  border: 1px solid #4286f4;
+  box-sizing: border-box;
+  
+}
+
+.resizable .resizers .resizer{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: white;
+  border: 1px solid #4286f4;
+  position: absolute;
+}
+
+.resizable .resizers .resizer.top-left {
+  left: -5px;
+  top: -5px;
+  cursor: pointer; /*resizer cursor*/
+  background-color: steelblue;
+}
+.resizable .resizers .resizer.top-right {
+  right: -5px;
+  top: -5px;
+  cursor: nesw-resize;
+}
+.resizable .resizers .resizer.bottom-left {
+  left: -5px;
+  bottom: -5px;
+  cursor: nesw-resize;
+}
+.resizable .resizers .resizer.bottom-right {
+  right: -5px;
+  bottom: -5px;
+  cursor: nwse-resize;
+}
+
+#newSlide {
+    font-size: 50px;
+    padding-left: 20px;
+}
+
+.sidenav .wrapper {
+    height: 40px;
+    width: 40px;
+}
+
+.sidenav .wrapper .buttons {
+    height: 10px;
+    width: 40px;
+    left: -10px
+}
+
+.sidenav .wrapper #container {
+    height: 30px;
+    width: 40px;
+    left: -10px
+}
